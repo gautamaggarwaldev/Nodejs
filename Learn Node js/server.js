@@ -11,9 +11,9 @@ var path = require("path");
 // console.log(__dirname);
 
 // console.log(path.delimiter);
-console.log(path.dirname); //[Function: dirname]
-console.log(path.dirname("users/gg/new folder/index.js")); //users/gg/new folder
-console.log(path.basename("users/gg/new folder/index.js")); // index.js
+// console.log(path.dirname); //[Function: dirname]
+// console.log(path.dirname("users/gg/new folder/index.js")); //users/gg/new folder
+// console.log(path.basename("users/gg/new folder/index.js")); // index.js
 
 
 
