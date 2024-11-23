@@ -19,13 +19,22 @@ var path = require("path");
 
 // console.log(path.join("/users", "/new folder", "/index.html"))
 
-let logPath = (path.join(__dirname, "/logs", "/logs.txt"));
-let assesPath = (path.join(__dirname, "/assets", "/images"));
+// let logPath = (path.join(__dirname, "/logs", "/logs.txt"));
+// let assesPath = (path.join(__dirname, "/assets", "/images"));
 
-console.log(assesPath);
+// console.log(assesPath);
 
 
-console.log(path.isAbsolute('C:\\Users\lalit\go\bin')) //true
-console.log(path.isAbsolute('./index.html')) //false
-console.log(path.isAbsolute('/index.html')) //true start from root 
+// console.log(path.isAbsolute('C:\\Users\lalit\go\bin')) //true
+// console.log(path.isAbsolute('./index.html')) //false
+// console.log(path.isAbsolute('/index.html')) //true start from root 
 
+
+var os = require("os");
+console.log(os.platform()); // win32
+console.log(os.arch());  // x64
+console.log(os.freemem());  
+console.log(os.hostname());  // hp
+console.log(os.userInfo());  
+console.log(os.cpus());  
+console.log(os.type());   // Windows_NT
