@@ -1,3 +1,3 @@
-export var r = 10;
-// module.exports = r;
+// export var r = 10;
+module.exports = r;
 
