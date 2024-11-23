@@ -17,5 +17,15 @@ var path = require("path");
 
 
 
-console.log(path.join("/users", "/new folder", "/index.html"))
-console.log(path.join(__dirname, "/index.html"))
+// console.log(path.join("/users", "/new folder", "/index.html"))
+
+let logPath = (path.join(__dirname, "/logs", "/logs.txt"));
+let assesPath = (path.join(__dirname, "/assets", "/images"));
+
+console.log(assesPath);
+
+
+console.log(path.isAbsolute('C:\\Users\lalit\go\bin')) //true
+console.log(path.isAbsolute('./index.html')) //false
+console.log(path.isAbsolute('/index.html')) //true start from root 
+
