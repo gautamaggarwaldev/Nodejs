@@ -39,24 +39,26 @@
 // console.log(os.cpus());  
 // console.log(os.type());   // Windows_NT
 
-const fs = require("fs")
-const path = require("path")
+// const fs = require("fs")
+// const path = require("path")
 
-console.log(__dirname);
-// fs.writeFile()
+// console.log(__dirname);
+// // fs.writeFile()
 
-fs.writeFile(path.join(__dirname, "/Logs", "log.txt"), "Logs!!", (err)=>{
-    if (err) {
-        console.error("Error Reading file");
-    } else {
-        console.log("Write successfully");
-    }
-})
+// fs.writeFile(path.join(__dirname, "/Logs", "log.txt"), "Logs!!", (err)=>{
+//     if (err) {
+//         console.error("Error Reading file");
+//     } else {
+//         console.log("Write successfully");
+//     }
+// })
 
-fs.readFile('pw.txt', 'utf8', (err,data)=>{
-    if (err) {
-        console.error("Error Reading file");
-    } else {
-        console.log("File Read ", data);
-    }
-});
+// fs.readFile('pw.txt', 'utf8', (err,data)=>{
+//     if (err) {
+//         console.error("Error Reading file");
+//     } else {
+//         console.log("File Read ", data);
+//     }
+// });
+
+
