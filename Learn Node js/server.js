@@ -62,3 +62,14 @@
 // });
 
 
+var express = require("express");
+
+var app = express();
+app.get("/", (req, res)=>{
+    res.send("Hi I am from GG");
+});
+
+app.listen(5001, ()=>{
+    console.log("Listening to a port:");
+    
+});
