@@ -5,8 +5,8 @@
 // }).listen(8080);
 
 
-const { log } = require("console");
-var path = require("path");
+// const { log } = require("console");
+// var path = require("path");
 // console.log(path.basename(__dirname));
 // console.log(__dirname);
 
@@ -30,11 +30,33 @@ var path = require("path");
 // console.log(path.isAbsolute('/index.html')) //true start from root 
 
 
-var os = require("os");
-console.log(os.platform()); // win32
-console.log(os.arch());  // x64
-console.log(os.freemem());  
-console.log(os.hostname());  // hp
-console.log(os.userInfo());  
-console.log(os.cpus());  
-console.log(os.type());   // Windows_NT
+// var os = require("os");
+// console.log(os.platform()); // win32
+// console.log(os.arch());  // x64
+// console.log(os.freemem());  
+// console.log(os.hostname());  // hp
+// console.log(os.userInfo());  
+// console.log(os.cpus());  
+// console.log(os.type());   // Windows_NT
+
+const fs = require("fs")
+const path = require("path")
+
+console.log(__dirname);
+// fs.writeFile()
+
+fs.writeFile(path.join(__dirname, "/Logs", "log.txt"), "Logs!!", (err)=>{
+    if (err) {
+        console.error("Error Reading file");
+    } else {
+        console.log("Write successfully");
+    }
+})
+
+fs.readFile('pw.txt', 'utf8', (err,data)=>{
+    if (err) {
+        console.error("Error Reading file");
+    } else {
+        console.log("File Read ", data);
+    }
+});
